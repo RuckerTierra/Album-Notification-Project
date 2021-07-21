@@ -3,14 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Album Project</title>
+    <script src="https://kit.fontawesome.com/02ea88b81a.js" crossorigin="anonymous"></script>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <main>
       <h2 id="title">Pick the Album You Want to Download</h2>
+      <div id="notificationModalDiv">
+        <div id="modal-content">
+          <span><i class="fas fa-check-square"></i></span>     
+          <span id="downloadComplete" class="hide">Download Complete<span>
+          <br />
+          <span id="itemsSaved">4 items saved</span>
+        </div>
+        
+        </div>
       <div id="allFourAlbumDiv">
-        <div onclick="albumClicked()"id="tarzanAlbumDiv" class="albumDiv">
+        <div onclick="selectedAlbum()"id="tarzanAlbumDiv" class="albumDiv">
           <h4>Tarzan Album</h4>
           <img src="images/TarzanOST.jpg" alt="image of Tarzan album" />
         </div>
@@ -28,7 +39,7 @@
         </div>
       </div>
       <div id="saveButtonDiv">
-        <button id="saveBtn" onclick="saveAlbumButton()">SAVE</button>
+        <button id="saveBtn" onclick="showNotification()">SAVE</button>
       </div>
     </main>
   <script src="script.js"></script>
