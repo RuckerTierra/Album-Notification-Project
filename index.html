@@ -10,36 +10,36 @@
   </head>
   <body>
     <main>
-      <h2 id="title">Pick the Album You Want to Download</h2>
-      <div id="notificationModalDiv">
+      <h2 id="title">Pick the Album(s) You Want to Download</h2>
+      <div id="notificationModalDiv" class="notify">
         <div id="modal-content">
           <span><i class="fas fa-check-square"></i></span>     
           <span id="downloadComplete" class="hide">Download Complete<span>
           <br />
-          <span id="itemsSaved">4 items saved</span>
+          <span id="itemTotal"># items saved</span>
         </div>
         
         </div>
       <div id="allFourAlbumDiv">
-        <div onclick="selectedAlbum()"id="tarzanAlbumDiv" class="albumDiv">
-          <h4>Tarzan Album</h4>
+        <div id="tarzanAlbumDiv" class="album">
+          <h4 class="albumTitle">Tarzan OST</h4>
           <img src="images/TarzanOST.jpg" alt="image of Tarzan album" />
         </div>
-        <div onclick="albumClicked()" id="tsrAlbumDiv" class="albumDiv">
-          <h4>That's So Raven Album</h4>
+        <div id="tsrAlbumDiv" class="album">
+          <h4 class="albumTitle">That's So Raven OST</h4>
           <img src="images/thats-so-raven.jpg" alt="image of That's So Raven album" />
         </div>
-        <div onclick="albumClicked()" id="hmAlbumDiv" class="albumDiv">
-          <h4>Hannah Montana Album</h4>
+        <div id="hmAlbumDiv" class="album">
+          <h4 class="albumTitle">Hannah Montana OST</h4>
           <img src="images/Hannah_Montana_soundtrack.png" alt="image of Hannah Montana album" />
         </div>
-        <div onclick="albumClicked()" id="hsmAlbumDiv" class="albumDiv">
-          <h4>High School Musical Album</h4>
+        <div id="hsmAlbumDiv" class="album">
+          <h4 class="albumTitle">High School Musical OST</h4>
           <img src="images/High_school_musical_soundtrack.jpg" alt="image of High School Musical album" />
         </div>
       </div>
       <div id="saveButtonDiv">
-        <button id="saveBtn" onclick="showNotification()">SAVE</button>
+        <button id="saveBtn" onclick="saveButton()">SAVE</button>
       </div>
     </main>
   <script src="script.js"></script>
