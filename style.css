@@ -13,27 +13,24 @@ body {
 
 /* Notification Modal display */
 #notificationModalDiv {
-  padding: 100px 50px;
+  padding: 150px 50px 150px;
   position: fixed;
   color: black;
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   width: 90%;
-  top: 15%;
+  top: 5%;
   display: none;
   z-index: 5;
   text-align: center;
   margin: 0 auto;
+  left: 2.3%
 }
 #modal-content {
   background-color: pink;
   width: 25%;
   padding: 30px 20px;
   margin: 0 auto;
-}
-
-#allFourAlbumDiv {
-  /* border: dashed pink 1px; remove after complete */
 }
 
 /* each album div */
@@ -73,4 +70,8 @@ button {
 /* when the album has been selected */
 .selected {
   border: solid yellow 5px;
+}
+/* notification of album(s) saved */
+.active {
+  display: none;
 }
