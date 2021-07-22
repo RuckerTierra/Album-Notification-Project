@@ -8,6 +8,7 @@ body {
 #title {
   color: cyan;
   text-align: center;
+  padding: 30px;
 }
 
 /* Notification Modal display */
@@ -19,7 +20,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   width: 90%;
   top: 15%;
-  /* display: none; */
+  display: none;
   z-index: 5;
   text-align: center;
   margin: 0 auto;
@@ -36,7 +37,7 @@ body {
 }
 
 /* each album div */
-.albumDiv {
+.album {
   display: inline-block;
   margin: 0 auto;
   border: solid 1.5px black;
@@ -44,6 +45,9 @@ body {
   background-color: white;
   color: blueviolet;
   padding: 3px;
+}
+.albumTitle {
+  padding: 10px 0;
 }
 img {
   width: 220px;
@@ -66,10 +70,7 @@ button {
   background-color: lightgreen;
 }
 
-/* classes */
+/* when the album has been selected */
 .selected {
-  border: solid white 5px;
-}
-.active {
-  border: 2.5px solid yellow;
+  border: solid yellow 5px;
 }
